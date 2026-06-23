@@ -326,7 +326,7 @@ Consultant Psychologist & Psychotherapist
 
 Chaandini Balachandran is a dedicated mental health professional committed to helping individuals improve their emotional wellbeing through compassionate, evidence-based psychological care.
 
-She currently serves as a Consultant Psychologist & Psychotherapist at Brainversation and works as a Psychologist at Apollo Institute of Bariatrics, Apollo Hospitals, Chennai.
+She currently serves as a Consultant Psychologist & Psychotherapist at Brainversation and works as a Psychologist at Apollo Hospitals, Chennai.
 
 Her professional journey includes extensive experience across hospitals, mental health institutions, counselling settings, psychology clinics, and community support initiatives. She has provided grief counselling support to more than 255 individuals and continues to work with people experiencing a wide range of emotional, psychological, and behavioural concerns.
 
@@ -367,8 +367,6 @@ Education
 Professional Memberships
 
 • American Psychological Association (APA)
-
-• Obesity and Metabolic Surgery Society of India (OSSI)
 
 • National Commission for Allied and Healthcare Professions (NCAHP)
 

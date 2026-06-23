@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* shadcn semantic tokens (HSL) mapped to the Serene Editorial palette */
+    --background: 270 100% 99%;
+    --foreground: 255 27% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 255 27% 20%;
+    --primary: 262 69% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 265 60% 95%;
+    --secondary-foreground: 262 60% 30%;
+    --accent: 333 54% 43%;
+    --accent-foreground: 0 0% 100%;
+    --border: 265 40% 90%;
+    --input: 265 40% 88%;
+    --ring: 262 69% 50%;
+    --radius: 14px;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-cream text-ink font-sans;
+    line-height: 1.75;
+    letter-spacing: 0.005em;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 {
+    @apply font-display;
+    line-height: 1.15;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
+  p { text-wrap: pretty; }
+
+  ::selection { background: rgba(124, 58, 237, 0.18); }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-8 py-3.5 text-[0.95rem] font-semibold transition-all duration-300 cursor-pointer select-none;
+  }
+  .btn-primary {
+    @apply text-white bg-grad-brand bg-[length:140%_140%] bg-[position:0%_50%] hover:bg-[position:100%_50%] hover:-translate-y-0.5 hover:shadow-glow;
+  }
+  .btn-outline {
+    @apply border-2 border-brand text-brand bg-transparent hover:bg-wash hover:-translate-y-0.5 hover:shadow-card;
+  }
+  .btn-ghost-light {
+    @apply border-2 text-white;
+    border-color: rgba(251, 248, 255, 0.3);
+  }
+  .btn-ghost-light:hover {
+    background: rgba(251, 248, 255, 0.1);
+    border-color: #fff;
+  }
+
+  .eyebrow {
+    @apply text-sm font-semibold tracking-[0.18em] uppercase text-brand;
+  }
+  .section-title {
+    @apply font-display font-semibold text-brand-dark;
+    font-size: clamp(2rem, 1.5rem + 3vw, 3.5rem);
+  }
+  .lead {
+    @apply text-muted;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  /* Animated underline accent used on emphasised heading words */
+  .em-underline {
+    background-image: linear-gradient(#6D28D9, #6D28D9);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    padding-bottom: 2px;
+    transition: background-size 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
+  }
+  .em-underline.in { background-size: 100% 2px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
