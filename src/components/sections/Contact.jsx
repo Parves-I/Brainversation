@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Phone, Mail, Video, Check, Loader2 } from 'lucide-react';
 import { supportOptions } from '../../data';
 import { Reveal } from '../ui/primitives';
+import { Aura } from '../ui/Aura';
 import { cn } from '../../lib/utils';
 
 function Field({ id, label, type = 'text', required, as = 'input', rows }) {
@@ -48,8 +49,9 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="bg-cream py-28">
-      <div className="container grid items-start gap-16 md:grid-cols-[1fr_1.2fr]">
+    <section id="contact" className="relative overflow-hidden bg-cream py-28">
+      <Aura variant="left" />
+      <div className="container relative grid items-start gap-16 md:grid-cols-[1fr_1.2fr]">
         <Reveal>
           <p className="eyebrow mb-3">Get In Touch</p>
           <h2 className="section-title mb-5">Let's Start The <em className="not-italic text-brand">Conversation</em></h2>

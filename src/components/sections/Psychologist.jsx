@@ -1,9 +1,11 @@
 import { Reveal } from '../ui/primitives';
+import { Aura } from '../ui/Aura';
 
 export default function Psychologist() {
   return (
-    <section id="psychologist" className="bg-cream py-28">
-      <div className="container grid items-center gap-16 md:grid-cols-[1fr_1.2fr]">
+    <section id="psychologist" className="relative overflow-hidden bg-cream py-28">
+      <Aura variant="right" />
+      <div className="container relative grid items-center gap-16 md:grid-cols-[1fr_1.2fr]">
         <Reveal className="relative mx-auto w-full max-w-sm">
           <div className="relative z-10 overflow-hidden rounded-3xl shadow-soft">
             <img src="/assets/psychologist.png" alt="Chaandini Balachandran" className="aspect-[4/5] w-full object-cover" />

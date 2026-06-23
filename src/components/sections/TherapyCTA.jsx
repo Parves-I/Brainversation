@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 import { checklistItems } from '../../data';
+import { TextureOverlay } from '../ui/MediaBackdrop';
 
 export default function TherapyCTA() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-brand-600 to-brand-dark py-28 text-white">
+      <TextureOverlay opacity={0.1} blend="mix-blend-soft-light" />
       <div className="pointer-events-none absolute -left-20 top-10 h-80 w-80 rounded-full bg-rose/20 blur-[100px]" />
       <div className="container relative max-w-3xl text-center">
         <motion.h2

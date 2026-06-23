@@ -1,4 +1,5 @@
 import ScrollProgress from './components/ScrollProgress';
+import ScrollThread from './components/ScrollThread';
 import Navbar from './components/Navbar';
 import Hero from './components/sections/Hero';
 import Marquee from './components/sections/Marquee';
@@ -20,6 +21,7 @@ export default function App() {
   return (
     <>
       <ScrollProgress />
+      <ScrollThread />
       <Navbar />
       <main>
         <Hero />

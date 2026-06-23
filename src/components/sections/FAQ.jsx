@@ -3,14 +3,16 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { faqs } from '../../data';
 import { SectionHeading } from '../ui/primitives';
+import { Aura } from '../ui/Aura';
 import { cn } from '../../lib/utils';
 
 export default function FAQ() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section id="faq" className="bg-wash py-28">
-      <div className="container">
+    <section id="faq" className="relative overflow-hidden bg-wash py-28">
+      <Aura variant="left" />
+      <div className="container relative">
         <SectionHeading eyebrow="Frequently Asked Questions" title="Common" em="Questions" />
 
         <div className="mx-auto mt-14 max-w-3xl space-y-3">

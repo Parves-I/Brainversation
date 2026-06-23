@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion';
 import { Sun, TrendingUp } from 'lucide-react';
 import { Reveal } from '../ui/primitives';
+import { Aura } from '../ui/Aura';
 
 export default function About() {
   return (
-    <section id="about" className="bg-cream py-28">
-      <div className="container grid items-center gap-16 md:grid-cols-2">
+    <section id="about" className="relative overflow-hidden bg-cream py-28">
+      <Aura variant="left" />
+      <div className="container relative grid items-center gap-16 md:grid-cols-2">
         <Reveal>
           <p className="eyebrow mb-3">About Brainversation</p>
           <h2 className="section-title mb-5">A Safe Space To Be Heard, Understood &amp; <em className="not-italic text-brand">Supported</em></h2>

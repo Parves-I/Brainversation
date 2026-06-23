@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import { services } from '../../data';
 import { Icon } from '../ui/Icon';
 import { SectionHeading } from '../ui/primitives';
+import { Aura } from '../ui/Aura';
 
 function ServiceCard({ s, i }) {
   const ref = useRef(null);
@@ -54,8 +55,9 @@ function ServiceCard({ s, i }) {
 
 export default function Services() {
   return (
-    <section id="services" className="bg-wash py-28">
-      <div className="container">
+    <section id="services" className="relative overflow-hidden bg-wash py-28">
+      <Aura variant="right" />
+      <div className="container relative">
         <SectionHeading
           eyebrow="Our Services"
           title="How We Can"

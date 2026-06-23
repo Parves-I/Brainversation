@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { GraduationCap, ScrollText, Award, Landmark, ArrowUpRight } from 'lucide-react';
 import { degrees, diplomas, shortCourses, memberships } from '../../data';
 import { SectionHeading } from '../ui/primitives';
+import { TextureOverlay } from '../ui/MediaBackdrop';
 import { cn } from '../../lib/utils';
 
 const categories = [
@@ -19,6 +20,7 @@ export default function Credentials() {
   return (
     <section id="qualifications" className="relative overflow-hidden bg-brand-dark py-28 text-white">
       {/* ambient glow + grid texture */}
+      <TextureOverlay opacity={0.14} blend="mix-blend-screen" />
       <div className="pointer-events-none absolute -left-32 top-0 h-96 w-96 rounded-full bg-brand/40 blur-[120px]" />
       <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-rose/25 blur-[120px]" />
       <div

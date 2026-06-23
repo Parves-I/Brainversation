@@ -2,10 +2,12 @@ import { motion } from 'framer-motion';
 import { features } from '../../data';
 import { Icon } from '../ui/Icon';
 import { SectionHeading } from '../ui/primitives';
+import { VideoBackdrop } from '../ui/MediaBackdrop';
 
 export default function WhyUs() {
   return (
     <section id="why-us" className="relative overflow-hidden bg-brand-dark py-28">
+      <VideoBackdrop opacity={0.45} scrim="bg-brand-dark/70" />
       <div className="pointer-events-none absolute -right-24 top-1/3 h-96 w-96 rounded-full bg-brand/30 blur-[100px]" />
       <div className="container relative">
         <SectionHeading
