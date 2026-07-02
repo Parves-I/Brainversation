@@ -4,8 +4,8 @@ import { Phone, Mail, Video, Check, Loader2 } from 'lucide-react';
 import { supportOptions } from '../../data';
 import { Reveal } from '../ui/primitives';
 import { Aura } from '../ui/Aura';
-import { FloralCorner } from '../ui/FloralCorner';
 import { cn } from '../../lib/utils';
+import { addSubmission } from '../../lib/submissions';
 
 function Field({ id, label, type = 'text', required, as = 'input', rows }) {
   const Tag = as;
@@ -42,17 +42,29 @@ export default function Contact() {
   const onSubmit = (e) => {
     e.preventDefault();
     if (status !== 'idle') return;
+    const form = e.target;
+    const fd = new FormData(form);
+    const submission = {
+      fullName: fd.get('fullName')?.trim() || '',
+      phone: fd.get('phone')?.trim() || '',
+      email: fd.get('email')?.trim() || '',
+      age: fd.get('age')?.trim() || '',
+      occupation: fd.get('occupation')?.trim() || '',
+      mode: fd.get('mode') || '',
+      support: fd.getAll('support'),
+      concern: fd.get('concern')?.trim() || '',
+    };
     setStatus('loading');
     setTimeout(() => {
+      addSubmission(submission);
       setStatus('done');
-      setTimeout(() => { setStatus('idle'); e.target.reset(); }, 2600);
+      setTimeout(() => { setStatus('idle'); form.reset(); }, 2600);
     }, 1100);
   };
 
   return (
     <section id="contact" className="relative overflow-hidden bg-cream py-28">
       <Aura variant="left" />
-      <FloralCorner at="bl" />
       <div className="container relative grid items-start gap-16 md:grid-cols-[1fr_1.2fr]">
         <Reveal>
           <p className="eyebrow mb-3">Get In Touch</p>

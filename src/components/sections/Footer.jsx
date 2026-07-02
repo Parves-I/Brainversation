@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { navLinks } from '../../data';
 
 export default function Footer() {
@@ -19,8 +20,9 @@ export default function Footer() {
           <p className="break-all">Email: chaandinibalachandran@gmail.com</p>
         </div>
       </div>
-      <div className="container mt-10 border-t border-white/10 pt-6 text-center text-xs text-white/40">
-        © {new Date().getFullYear()} Brainversation. All Rights Reserved.
+      <div className="container mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-center text-xs text-white/40 sm:flex-row">
+        <span>© {new Date().getFullYear()} Brainversation. All Rights Reserved.</span>
+        <Link to="/submissions" className="transition-colors hover:text-rose">Staff Login</Link>
       </div>
     </footer>
   );
