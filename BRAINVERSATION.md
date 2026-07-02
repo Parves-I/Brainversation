@@ -466,7 +466,7 @@ Contact Information
 
 Phone
 
-+91 74488 45098
++91 733 968 5098
 
 Email
 
@@ -582,7 +582,7 @@ Where Minds Find Clarity, Strength & Growth
 
 Home | About | Services | FAQs | Contact
 
-Phone: +91 74488 45098
+Phone: +91 733 968 5098
 
 Email: chaandinibalachandran@gmail.com
 

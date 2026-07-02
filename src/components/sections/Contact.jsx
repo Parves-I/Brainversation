@@ -31,7 +31,7 @@ function Field({ id, label, type = 'text', required, as = 'input', rows }) {
 }
 
 const contactItems = [
-  { icon: Phone, label: 'Phone', value: '+91 74488 45098' },
+  { icon: Phone, label: 'Phone', value: '+91 733 968 5098' },
   { icon: Mail, label: 'Email', value: 'chaandinibalachandran@gmail.com' },
   { icon: Video, label: 'Consultation Modes', value: 'Online & In-Person' },
 ];

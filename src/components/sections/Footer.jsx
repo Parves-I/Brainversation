@@ -16,7 +16,7 @@ export default function Footer() {
           ))}
         </nav>
         <div className="text-sm md:text-right">
-          <p>Phone: +91 74488 45098</p>
+          <p>Phone: +91 733 968 5098</p>
           <p className="break-all">Email: chaandinibalachandran@gmail.com</p>
         </div>
       </div>
