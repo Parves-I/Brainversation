@@ -5,6 +5,7 @@ import { services } from '../../data';
 import { Icon } from '../ui/Icon';
 import { SectionHeading } from '../ui/primitives';
 import { Aura } from '../ui/Aura';
+import { FloralCorner } from '../ui/FloralCorner';
 
 function ServiceCard({ s, i }) {
   const ref = useRef(null);
@@ -57,6 +58,7 @@ export default function Services() {
   return (
     <section id="services" className="relative overflow-hidden bg-wash py-28">
       <Aura variant="right" />
+      <FloralCorner at="tl" />
       <div className="container relative">
         <SectionHeading
           eyebrow="Our Services"

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Sun, TrendingUp } from 'lucide-react';
 import { Reveal } from '../ui/primitives';
 import { Aura } from '../ui/Aura';
+import aboutImage from '../../../assets/about_image.png';
 
 export default function About() {
   return (
@@ -21,7 +22,7 @@ export default function About() {
 
         <Reveal delay={0.15} className="relative">
           <div className="overflow-hidden rounded-3xl shadow-soft">
-            <img src="/assets/about_image.png" alt="Calming therapy space" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+            <img src={aboutImage} alt="Calming therapy space" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
           </div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

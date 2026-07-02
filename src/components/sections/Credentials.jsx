@@ -18,13 +18,13 @@ export default function Credentials() {
   const cat = categories[active];
 
   return (
-    <section id="qualifications" className="relative overflow-hidden bg-brand-dark py-28 text-white">
+    <section id="qualifications" className="relative overflow-hidden bg-[#3D1A6E] py-28 text-white">
       {/* ambient glow + grid texture */}
-      <TextureOverlay opacity={0.14} blend="mix-blend-screen" />
+      <TextureOverlay opacity={0.04} blend="mix-blend-screen" />
       <div className="pointer-events-none absolute -left-32 top-0 h-96 w-96 rounded-full bg-brand/40 blur-[120px]" />
       <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-rose/25 blur-[120px]" />
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.04]"
+        className="pointer-events-none absolute inset-0 opacity-[0.02]"
         style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '48px 48px' }}
       />
 

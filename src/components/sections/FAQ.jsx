@@ -4,6 +4,7 @@ import { ChevronDown } from 'lucide-react';
 import { faqs } from '../../data';
 import { SectionHeading } from '../ui/primitives';
 import { Aura } from '../ui/Aura';
+import { FloralCorner } from '../ui/FloralCorner';
 import { cn } from '../../lib/utils';
 
 export default function FAQ() {
@@ -12,6 +13,8 @@ export default function FAQ() {
   return (
     <section id="faq" className="relative overflow-hidden bg-wash py-28">
       <Aura variant="left" />
+      <FloralCorner at="tr" />
+      <FloralCorner at="bl" />
       <div className="container relative">
         <SectionHeading eyebrow="Frequently Asked Questions" title="Common" em="Questions" />
 
