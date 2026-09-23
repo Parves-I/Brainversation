@@ -17,7 +17,7 @@ export default function Footer() {
         </nav>
         <div className="text-sm md:text-right">
           <p>Phone: +91 733 968 5098</p>
-          <p className="break-all">Email: chaandinibalachandran@gmail.com</p>
+          <p className="break-all">Email: brainversation.chan@gmail.com</p>
         </div>
       </div>
       <div className="container mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-center text-xs text-white/40 sm:flex-row">

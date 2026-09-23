@@ -470,7 +470,7 @@ Phone
 
 Email
 
-chaandinibalachandran@gmail.com
+brainversation.chan@gmail.com
 
 Consultation Modes
 
@@ -584,7 +584,7 @@ Home | About | Services | FAQs | Contact
 
 Phone: +91 733 968 5098
 
-Email: chaandinibalachandran@gmail.com
+Email: brainversation.chan@gmail.com
 
 © 2026 Brainversation. All Rights Reserved.
 
