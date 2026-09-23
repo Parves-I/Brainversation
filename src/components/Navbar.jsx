@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { navLinks } from '../data';
 import { cn } from '../lib/utils';
+import logo from '../../assets/logofile.png';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -22,7 +23,9 @@ export default function Navbar() {
       )}
     >
       <div className="container flex items-center justify-between">
-        <a href="#hero" className="font-display text-xl font-semibold text-brand-dark">Brainversation.</a>
+        <a href="#hero" aria-label="Brainversation home" className="inline-flex items-center">
+          <img src={logo} alt="Brainversation" className="h-10 w-auto md:h-11" />
+        </a>
 
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((l) => (
