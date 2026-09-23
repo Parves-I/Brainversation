@@ -24,7 +24,7 @@ export const features = [
 export const stats = [
   { value: 400, suffix: '+', label: 'Individuals Supported' },
   { value: 9, suffix: '+', label: 'Specialised Services' },
-  { value: 9, suffix: '', label: 'Academic Qualifications' },
+  { value: 10, suffix: '', label: 'Academic Qualifications' },
   { value: 3, suffix: '', label: 'Professional Memberships' },
 ];
 
@@ -69,8 +69,6 @@ export const degrees = [
   'PG Diploma in Relationship & Marriage Counselling',
   'BSc Psychology',
 ];
-
-export const diplomas = [];
 
 export const shortCourses = [
   'Diploma in Learning Disabilities',

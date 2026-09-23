@@ -20,7 +20,7 @@ export default function Psychologist() {
           <p className="mb-5 text-lg font-medium text-brand">Consultant Psychologist &amp; Psychotherapist</p>
           <div className="space-y-4 text-muted">
             <p>A dedicated mental health professional committed to helping individuals improve their emotional wellbeing through compassionate, evidence-based psychological care.</p>
-            <p>She's the founder and consultant at Brainversation and works as a Psychologist at Apollo Hospitals, Chennai. She has provided compassionate psychological support to over 400 individuals.</p>
+            <p>She's the founder and consultant at Brainversation and works as a Psychologist at Apollo Hospitals, Chennai. Her practice spans individual counselling, relationships, and emotional wellbeing — combining evidence-based methods with genuine warmth and understanding.</p>
             <p>Currently pursuing a PhD in Neuropsychology while continuing to expand her expertise in advanced counselling and psychotherapeutic interventions.</p>
           </div>
           <a href="#contact" className="btn btn-primary mt-7">Book A Session With Chaandini</a>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { GraduationCap, Award, Landmark, ArrowUpRight, Brain as BrainIcon } from 'lucide-react';
+import { GraduationCap, Award, Landmark, ArrowUpRight, Brain } from 'lucide-react';
 import { degrees, shortCourses, memberships } from '../../data';
 import { SectionHeading } from '../ui/primitives';
 import { TextureOverlay } from '../ui/MediaBackdrop';
@@ -96,17 +96,17 @@ export default function Credentials() {
                   </div>
                 </div>
 
-                <ul className="space-y-1">
+                <ul className="divide-y divide-white/10">
                   {cat.items.map((item, idx) => (
                     <motion.li
                       key={item}
                       initial={{ opacity: 0, x: 18 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.4, delay: 0.08 + idx * 0.07, ease: [0.16, 1, 0.3, 1] }}
-                      className="group flex items-center gap-4 rounded-xl px-3 py-3 transition-colors hover:bg-white/[0.04]"
+                      className="group flex items-center gap-4 py-4"
                     >
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand/20 text-brand-light transition-colors group-hover:bg-brand/30">
-                        <BrainIcon size={16} strokeWidth={1.8} />
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-soft/10 text-soft transition-all group-hover:bg-grad-brand group-hover:text-white">
+                        <Brain size={18} strokeWidth={1.8} />
                       </span>
                       <span className="flex-1 text-[1.02rem] text-white/90 transition-colors group-hover:text-white">
                         {item}
