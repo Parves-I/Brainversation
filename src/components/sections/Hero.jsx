@@ -5,7 +5,7 @@ import NeuralCanvas from '../NeuralCanvas';
 const trust = [
   'Consultant Psychologist & Psychotherapist',
   'Apollo Hospitals Experience',
-  '255+ Individuals Supported',
+  '400+ Individuals Supported',
   'Evidence-Based Approaches',
   'Online & In-Person',
 ];

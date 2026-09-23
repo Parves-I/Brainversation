@@ -1,14 +1,13 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { GraduationCap, ScrollText, Award, Landmark, ArrowUpRight } from 'lucide-react';
-import { degrees, diplomas, shortCourses, memberships } from '../../data';
+import { GraduationCap, Award, Landmark, ArrowUpRight, Brain as BrainIcon } from 'lucide-react';
+import { degrees, shortCourses, memberships } from '../../data';
 import { SectionHeading } from '../ui/primitives';
 import { TextureOverlay } from '../ui/MediaBackdrop';
 import { cn } from '../../lib/utils';
 
 const categories = [
   { key: 'degrees', icon: GraduationCap, label: 'Degrees & Specialisations', blurb: 'Core academic foundation in clinical and counselling psychology.', items: degrees },
-  { key: 'diplomas', icon: ScrollText, label: 'Postgraduate Diplomas', blurb: 'Focused postgraduate training in specialised counselling areas.', items: diplomas },
   { key: 'short', icon: Award, label: 'Certifications & Short Courses', blurb: 'Continued learning across applied mental-health disciplines.', items: shortCourses },
   { key: 'memberships', icon: Landmark, label: 'Professional Memberships', blurb: 'Affiliations upholding ethical, professional standards.', items: memberships },
 ];
@@ -97,22 +96,21 @@ export default function Credentials() {
                   </div>
                 </div>
 
-                <ul className="divide-y divide-white/10">
+                <ul className="space-y-1">
                   {cat.items.map((item, idx) => (
                     <motion.li
                       key={item}
                       initial={{ opacity: 0, x: 18 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.4, delay: 0.08 + idx * 0.07, ease: [0.16, 1, 0.3, 1] }}
-                      className="group flex items-center gap-5 py-4"
+                      className="group flex items-center gap-4 rounded-xl px-3 py-3 transition-colors hover:bg-white/[0.04]"
                     >
-                      <span className="font-display text-sm font-semibold text-rose/80 tabular-nums">
-                        {String(idx + 1).padStart(2, '0')}
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand/20 text-brand-light transition-colors group-hover:bg-brand/30">
+                        <BrainIcon size={16} strokeWidth={1.8} />
                       </span>
                       <span className="flex-1 text-[1.02rem] text-white/90 transition-colors group-hover:text-white">
                         {item}
                       </span>
-                      <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-soft/40 transition-all group-hover:scale-150 group-hover:bg-soft" />
                     </motion.li>
                   ))}
                 </ul>

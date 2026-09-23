@@ -22,7 +22,7 @@ export const features = [
 ];
 
 export const stats = [
-  { value: 255, suffix: '+', label: 'Individuals Supported' },
+  { value: 400, suffix: '+', label: 'Individuals Supported' },
   { value: 9, suffix: '+', label: 'Specialised Services' },
   { value: 9, suffix: '', label: 'Academic Qualifications' },
   { value: 3, suffix: '', label: 'Professional Memberships' },
@@ -65,12 +65,12 @@ export const degrees = [
   'PhD in Neuropsychology (Pursuing)',
   'MSc Clinical Psychology',
   'MSc Counselling & Psychotherapy',
-];
-
-export const diplomas = [
   'PG Diploma in Child Counselling',
   'PG Diploma in Relationship & Marriage Counselling',
+  'BSc Psychology',
 ];
+
+export const diplomas = [];
 
 export const shortCourses = [
   'Diploma in Learning Disabilities',
